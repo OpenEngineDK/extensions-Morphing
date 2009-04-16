@@ -5,6 +5,9 @@
 #include <Math/Vector.h>
 #include <Scene/TransformationNode.h>
 
+namespace OpenEngine {
+namespace Animation {
+
 class TransformationNodeMorpher : public IMorpher<Scene::TransformationNode> {
  private:
   Scene::TransformationNode* current;
@@ -32,6 +35,9 @@ class TransformationNodeMorpher : public IMorpher<Scene::TransformationNode> {
     return current;
   }
 };
+
+} // NS Animation
+} // NS OpenEngine
 
 #endif // _TRANSFORMATION_NODE_MORPHER_
 

@@ -6,7 +6,10 @@
 #include <Utils/Timer.h>
 #include <list>
 
-#include "IMorpher.h"
+#include <Animation/IMorpher.h>
+
+namespace OpenEngine {
+namespace Animation {
 
 using namespace OpenEngine;
 
@@ -111,5 +114,8 @@ struct SortByTime : public binary_function<KeyFrame*, KeyFrame*, bool> {
     return (left->time < right->time);
   }
   };*/
+
+} // NS Animation
+} // NS OpenEngine
 
 #endif // _META_MORPHER_
