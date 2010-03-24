@@ -6,7 +6,7 @@
 #include <Utils/Timer.h>
 #include <list>
 
-#include <Animation/IMorpher.h>
+#include <Animations/IMorpher.h>
 
 namespace OpenEngine {
 namespace Animation {
