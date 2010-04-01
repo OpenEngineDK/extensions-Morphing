@@ -34,25 +34,14 @@ private:
     float tmp;
     Skeleton* skeleton;
 public:
+    AnimationNode() {}
     AnimationNode(Skeleton* skeleton);
     virtual ~AnimationNode() {};
     
     Skeleton* GetSkeleton();
-
-private:
-    friend class boost::serialization::access;
-    template<class Archive>
-    void serialize(Archive & ar, const unsigned int version) {
-        // serialize base class information
-        ar & boost::serialization::base_object<ISceneNode>(*this);
-        ar & tmp;
-    }
-
 };
 
 } // NS Scene
 } // NS OpenEngine
-
-BOOST_CLASS_EXPORT(OpenEngine::Scene::AnimationNode)
 
 #endif // _OE_ANIMATION_NODE_H_
