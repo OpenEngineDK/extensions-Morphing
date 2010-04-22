@@ -12,8 +12,8 @@ ADD_LIBRARY(Extensions_Animations
   Animations/Skeleton.h
   Animations/Skeleton.cpp
 
-  Renderers/OpenGL/AnimationRenderingView.h
-  Renderers/OpenGL/AnimationRenderingView.cpp
+#  Renderers/OpenGL/AnimationRenderingView.h
+#  Renderers/OpenGL/AnimationRenderingView.cpp
 )
 
 TARGET_LINK_LIBRARIES(Extensions_Animations
